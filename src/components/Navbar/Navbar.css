@@ -1,0 +1,108 @@
+/* Navbar container */
+nav {
+    align-items: center;
+    ; /* Dark slate blue */
+    background-color: black;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.5); /* Softer shadow */
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px; /* Reduced height for a sleeker look */
+    padding: 0 20px;
+    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+  }
+  
+  /* Brand styling */
+  nav .nav-brand {
+    color: #ecf0f1; /* Light grey for modern contrast */
+    font-size: 1.8em; /* Slightly smaller for balance */
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  /* Toolbox container */
+  .toolbox {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between;
+    width: 100%; /* Full width for better layout on small screens */
+    max-width: 600px;
+    margin: 10px auto;
+  }
+  
+  /* Group container */
+  .toolbox .group {
+    margin: 0 10px; /* More spacing between groups */
+  }
+  
+  /* Label styling */
+  .toolbox label {
+    color: #ecf0f1; /* Light grey */
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; /* Added margin for better spacing */
+  }
+  
+  /* Button styling */
+  .toolbox button {
+    background-color: #e74c3c; /* Vibrant red */
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 10px;
+    outline: none;
+    padding: 10px 20px; /* More padding for better touch targets */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .toolbox button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* Input and select styling */
+  .toolbox select, .toolbox input[type='range'] {
+    background-color: #34495e; /* Darker background */
+    border: none;
+    border-radius: 5px;
+    color: #ecf0f1;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px; /* Padding for better touch targets */
+    font-size: 0.9em;
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .toolbox select:hover, .toolbox input[type='range']:hover {
+    background-color: black; /* Slightly darker on hover */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 992px) {
+    nav {
+      flex-direction: column;
+      padding: 20px; /* Added padding for better spacing */
+    }
+  
+    .toolbox {
+      display: block;
+      text-align: center;
+    }
+  
+    .toolbox > div {
+      margin: 10px 0;
+    }
+  
+    .speed {
+      display: none; /* Hide speed control on small screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .toolbox select, .toolbox input[type='range'], .toolbox button {
+      min-width: 100px; /* Adjusted min-width for smaller screens */
+    }
+  }
+  

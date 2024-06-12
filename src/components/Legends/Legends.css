@@ -1,0 +1,66 @@
+/* Legends container */
+.legends {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 10px 20px;
+   
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Key container */
+  .key {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+  }
+  
+  .key:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Square styles */
+  .sq {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  /* Status colors */
+  .compare {
+    background-color: #ffd700; /* Changed to gold for better look */
+  }
+  
+  .swap {
+    background-color: #ff4d4d; /* Softer red for modern look */
+  }
+  
+  .sorted {
+    background-color: #32cd32; /* Lighter green for better visibility */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 564px) {
+    .legends {
+      flex-direction: column;
+      font-size: 0.9em; /* Slightly larger font size for readability */
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .key {
+      margin-bottom: 10px; /* Spacing between keys on small screens */
+    }
+  
+    .key:last-child {
+      margin-bottom: 0;
+    }
+  }
+  

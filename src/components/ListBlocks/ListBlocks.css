@@ -1,0 +1,30 @@
+/* Container for the list blocks */
+.listBlocks {
+    margin: 0 auto;
+    min-height: 520px;
+    min-width: 90%;
+    text-align: center;
+    padding: 20px 0; /* Added padding for better spacing */
+  }
+  
+  /* Individual blocks */
+  .listBlocks > .block {
+    background-color: #4db6ac; /* Modern teal color */
+    color: #ffffff; /* White text for contrast */
+    display: inline-block;
+    font-size: 12px; /* Slightly larger font size */
+    font-weight: bold;
+    margin: 0 5px; /* More spacing between blocks */
+    padding: 10px; /* Padding for better spacing inside blocks */
+    text-align: center;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: height 150ms ease-in, transform 150ms ease-in; /* Smooth transitions */
+  }
+  
+  /* Hover effect */
+  .listBlocks > .block:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
